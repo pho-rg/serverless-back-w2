@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration Azure Blob Storage
-AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
-CONTAINER_CSV = os.getenv("CONTAINER_CSV")
-CONTAINER_JSON = os.getenv("CONTAINER_JSON")
+AZURE_STORAGE_CONNECTION_STRING = ""
+CONTAINER_CSV = "csv-uploads"
+CONTAINER_JSON = "json-report"
 
 if not AZURE_STORAGE_CONNECTION_STRING or not CONTAINER_CSV or not CONTAINER_JSON:
     raise RuntimeError("Les variables d'environnement Azure ne sont pas définies !")
