@@ -69,3 +69,8 @@ jobs:
           app-name: 'serverless-backend-w2'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9616EF7B77C647A68D1FA8910C9CD145 }}
+
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{secrets.AZURE_STORAGE_CONNECTION_STRING}}
+          CONTAINER_CSV: ${{secrets.CONTAINER_CSV}}
+          CONTAINER_NAME: ${{secrets.CONTAINER_NAME}}
