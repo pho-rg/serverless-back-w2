@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration Azure Blob Storage
-AZURE_STORAGE_CONNECTION_STRING = ""
+AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=storagebros;AccountKey=Ix9SHXlpJjuAGz2QnDWupLtUl1C9kcqH79XYE8daleIrMrS2hKecI/hoHaFr0nSTQGTtHxF6Tbhk+AStGrAT9A==;EndpointSuffix=core.windows.net"
 CONTAINER_CSV = "csv-uploads"
 CONTAINER_JSON = "json-report"
 
